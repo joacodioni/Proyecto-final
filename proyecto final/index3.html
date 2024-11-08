@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="juguemos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <title>Proyecto-Final</title>
+</head>
+<body>
+<header class="header">
+    <div class="header-container logo-nav">
+        <a href="index.html" class="logo">
+            <lord-icon
+            src="https://cdn.lordicon.com/kjtalhau.json"
+            trigger="in"
+            delay="750"
+            colors="primary:#000000,secondary:#3a3347,tertiary:#4c2882,quaternary:#ebe6ef"
+            style="width:120px;height:120px">
+            </lord-icon>
+        </a>
+            <nav class="links">
+                <ul>
+                    <li><a href="index2.html">HISTORIA</a></li>
+                    <li><a href="index3.html">JUGUEMOS</a></li>
+                </ul>
+            </nav>
+        </div>
+</header>
+<main>
+    <div class="imagen-fondo3">
+        <h1 class="titulo">JUGUEMOS UN POCO</h1>
+    </div>
+    <section class="rompecabeza">
+        <h2>Armemos el rompecabeza y veamos que imagen es...</h2>
+    <div class="drop-zone">
+        <div class="drop-area" ondrop="drop(event)" ondragover="allowDrop(event)" data-index="1"><p>arrastre y suelte la imagen aquí</p></div>
+        <div class="drop-area" ondrop="drop(event)" ondragover="allowDrop(event)" data-index="2"><p>arrastre y suelte la imagen aquí</p></div>
+        <div class="drop-area" ondrop="drop(event)" ondragover="allowDrop(event)" data-index="3"><p>arrastre y suelte la imagen aquí</p></div>
+    </div>
+    <div class="galeria-img" id="galeria-img">
+        <img src="img/rompe2.png" alt="image 2" draggable="true" ondragstart="drag(event)" id="img2" data-index="2">
+        <img src="img/Rompe1.png" alt="image 1" draggable="true" ondragstart="drag(event)" id="img1" data-index="1">
+        <img src="img/Rompe3.png" alt="image 3" draggable="true" ondragstart="drag(event)" id="img3" data-index="3">
+    </div>
+
+    <button class="reset-button" onclick="resetRompecabeza()">REINICIAR</button>
+
+    </section>
+</main>
+<footer class="footer">
+    <div class="contefooter">
+        <div class="izq">
+          <img src="./img/logo.png" alt="logo">
+            <strong>PROGRAMACION E HISTORIA</strong>
+        </div>
+        <div class="derecha">
+            <p>Sitio con fines educativos - Creado por M. Victoria Lopez</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="./sript.js"></script>
+</body>
+</html>
